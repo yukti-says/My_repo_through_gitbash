@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New branch in repo</title>
+    <style>
+        h1{
+            color: blue;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>
+        hi there i am yukti sahu here!
+    </h1>
+</body>
+</html>
+
+
+hp@LAPTOP-JM2907JB MINGW64 ~/OneDrive/Desktop/DSA leanring/Trees (main)
+$ git clone https://github.com/yukti-says/My_repo_through_gitbash.git
+Cloning into 'My_repo_through_gitbash'...
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (6/6), done.
+remote: Total 7 (delta 1), reused 6 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (7/7), done.
+Resolving deltas: 100% (1/1), done.
+
+hp@LAPTOP-JM2907JB MINGW64 ~/OneDrive/Desktop/DSA leanring/Trees (main)
+$ cd "My_repo_through_gitbash"
+
+hp@LAPTOP-JM2907JB MINGW64 ~/OneDrive/Desktop/DSA leanring/Trees/My_repo_through_gitbash (main)
+$ git checkout -b feature1
+Switched to a new branch 'feature1'
+
+hp@LAPTOP-JM2907JB MINGW64 ~/OneDrive/Desktop/DSA leanring/Trees/My_repo_through_gitbash (feature1)
+$ git branch
+* feature1
+  main
+
+hp@LAPTOP-JM2907JB MINGW64 ~/OneDrive/Desktop/DSA leanring/Trees/My_repo_through_gitbash (feature1)
+$ touch index2.html
+
+hp@LAPTOP-JM2907JB MINGW64 ~/OneDrive/Desktop/DSA leanring/Trees/My_repo_through_gitbash (feature1)
+$ git add index2.html
+
+hp@LAPTOP-JM2907JB MINGW64 ~/OneDrive/Desktop/DSA leanring/Trees/My_repo_through_gitbash (feature1)
+$ git commit -m "added new file"
+[feature1 debcf41] added new file
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 index2.html
+
+hp@LAPTOP-JM2907JB MINGW64 ~/OneDrive/Desktop/DSA leanring/Trees/My_repo_through_gitbash (feature1)
+$ git push origin feature1
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (2/2), 327 bytes | 327.00 KiB/s, done.
+Total 2 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: 
+remote: Create a pull request for 'feature1' on GitHub by visiting:
+remote:      https://github.com/yukti-says/My_repo_through_gitbash/pull/new/feature1
+remote:
+To https://github.com/yukti-says/My_repo_through_gitbash.git
+ * [new branch]      feature1 -> feature1
